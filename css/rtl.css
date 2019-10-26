@@ -1,0 +1,56 @@
+/* RTL by PH98 */
+
+
+body{ 
+    direction: rtl;
+    text-align: right;
+}
+body ,h1,h2,h3,h4,h5,h6, p , a ,
+.header_area .navbar .nav .nav-item .nav-link{
+    font-family: IRANSans;
+}
+/* 
+.container{
+    flex-direction: row-reverse;
+} */
+
+.header_area .navbar .nav .nav-item:last-child {
+    margin-right: 35px;
+}
+.header_area .navbar-brand {
+
+    margin-right: 0;
+
+    margin-left: 30px;
+}
+
+
+@media (min-width: 1200px) {
+    .about-img {
+      position: relative;
+      right: -100px;
+      left: auto;
+    }
+  }
+
+.magic-ball-about::before {
+    top: 265px;
+    left: auto;
+    right: -32px;
+}
+.magic-ball-testimonial::before{
+
+    top: 265px;
+    left: auto;
+    right: -32px;
+}
+@media (min-width: 768px)
+{
+    .magic-ball::before {
+
+    left: auto;
+
+    right: -35px;
+
+    }
+}
