@@ -1,0 +1,27 @@
+{
+  "connection": "default",
+  "collectionName": "poems",
+  "info": {
+    "name": "Poem"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "format": {
+      "type": "text"
+    },
+    "chapter": {
+      "via": "poems",
+      "model": "chapter"
+    },
+    "verses": {
+      "via": "poem",
+      "collection": "verse"
+    }
+  }
+}

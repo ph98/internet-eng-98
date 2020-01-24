@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/mamwryts",
+      "handler": "mamwryt.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/mamwryts/count",
+      "handler": "mamwryt.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/mamwryts/:id",
+      "handler": "mamwryt.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/mamwryts",
+      "handler": "mamwryt.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/mamwryts/:id",
+      "handler": "mamwryt.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/mamwryts/:id",
+      "handler": "mamwryt.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

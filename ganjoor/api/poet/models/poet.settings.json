@@ -1,0 +1,29 @@
+{
+  "connection": "default",
+  "collectionName": "poets",
+  "info": {
+    "name": "Poet"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "picture": {
+      "collection": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
+    },
+    "books": {
+      "via": "poet",
+      "collection": "book"
+    }
+  }
+}

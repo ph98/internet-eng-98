@@ -1,0 +1,26 @@
+{
+  "info": {
+    "name": "ماموریت"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "descripton": {
+      "type": "richtext"
+    },
+    "endDate": {
+      "type": "date"
+    },
+    "mozeiiin": {
+      "model": "mwzeyn",
+      "via": "mamoriat"
+    }
+  },
+  "connection": "default",
+  "collectionName": "mamwryt"
+}

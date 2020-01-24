@@ -1,0 +1,39 @@
+{
+  "connection": "default",
+  "collectionName": "comments",
+  "info": {
+    "name": "comment"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "text": {
+      "type": "text"
+    },
+	"user": {
+		"plugin": "users-permissions",
+		"model": "user",
+		"via": "comments"
+	  },
+    "verse": {
+      "model": "verse",
+      "via": "comments"
+    },
+    "confirm": {
+      "type": "boolean"
+    },
+    "comment": {
+      "model": "comment",
+      "via": "comments"
+    },
+    "comments": {
+      "collection": "comment",
+      "via": "comment"
+    },
+    "username": {
+      "type": "string"
+    }
+  }
+}

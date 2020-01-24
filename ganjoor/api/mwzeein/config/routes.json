@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/mwzeeins",
+      "handler": "mwzeein.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/mwzeeins/count",
+      "handler": "mwzeein.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/mwzeeins/:id",
+      "handler": "mwzeein.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/mwzeeins",
+      "handler": "mwzeein.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/mwzeeins/:id",
+      "handler": "mwzeein.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/mwzeeins/:id",
+      "handler": "mwzeein.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

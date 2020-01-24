@@ -1,0 +1,35 @@
+{
+  "connection": "default",
+  "collectionName": "chapters",
+  "info": {
+    "name": "chapter"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "book": {
+      "via": "chapters",
+      "model": "book"
+    },
+    "poems": {
+      "collection": "poem",
+      "via": "chapter"
+    },
+    "description": {
+      "type": "text"
+    },
+    "chapter": {
+      "model": "chapter",
+      "via": "chapters"
+    },
+    "chapters": {
+      "collection": "chapter",
+      "via": "chapter"
+    }
+  }
+}

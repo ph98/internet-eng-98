@@ -1,0 +1,24 @@
+{
+  "connection": "default",
+  "collectionName": "mwzeyn",
+  "info": {
+    "name": "موزعین"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "password": {
+      "type": "password",
+      "required": true
+    },
+    "mamoriat": {
+      "via": "mozeiiin",
+      "collection": "mamwryt"
+    }
+  }
+}
